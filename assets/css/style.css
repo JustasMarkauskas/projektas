@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+
+body{
+	margin: 0;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+
+html{
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Kaushan Script', cursive;
+}
+
+nav ul {
+	list-style: none;
+}
+section{
+	padding: 70px 0;
+}
+
+.overlay{
+	min-height: 100vh;
+	max-width: 1200px; /*nurodome maksimalu ploti*/
+	margin: 0 auto; /*centruojame*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+}
+.first-page {
+	background-image: url("../images/first-background.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	min-height: 100vh;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: space-around;
+}
+/*Kodel navigacijos meniu susitraukia i kaire puse kai padarai fixed ? */
+.top-nav {
+	/*position: fixed;*/
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #dfdfdf;
+	max-width: 1200px; 
+	top: 0;
+	/*background-color: #fff;*/
+}
+.flex-container li a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Montserrat';
+	padding-left:15x;
+	padding-right:15px;
+}
+.logo a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Kaushan Script';
+	color: #b6261b;
+}
+h1 {
+	font-size: 6.5625em;
+	color: #b6261b;
+	font-family: 'Kaushan Script';
+	text-transform: uppercase;
+	margin: 0;
+	text-align: center;
+}
+.middle-content h2 {
+	font-size: 2.375em;
+	color: white;
+	font-family: 'Montserrat';
+	margin: 0;
+}
+.flex-container h3 {
+	color: white;
+	/*margin: 0;*/
+	font-family: 'Montserrat';
+}
