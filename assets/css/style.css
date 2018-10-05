@@ -51,15 +51,25 @@ section{
 	justify-content: space-around;
 }
 /*Kodel navigacijos meniu susitraukia i kaire puse kai padarai fixed ? */
-.top-nav {
-	/*position: fixed;*/
-	position: sticky;
-	display: flex;
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.top-nav > .container {
 	justify-content: space-between;
+	
+}
+
+.top-nav {
+	position: fixed;
+	/*position: sticky;*/
+	/*display: flex;*/
+	/*justify-content: space-between;*/
 	align-items: center;
 	border-bottom: 1px solid #dfdfdf;
-	max-width: 1200px; 
+	width: 100%; 
 	top: 0;
+	/*margin: 0 auto;*/
 	/*background-color: #fff;*/
 }
 .flex-container li a {
