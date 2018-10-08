@@ -1,12 +1,13 @@
 *,
 *::before,
 *::after{
-	box-sizing: border-box;
-	border: 1px solid red;
+/*	box-sizing: border-box;
+	border: 1px solid red;*/
 }
 
 body{
 	margin: 0;
+	background-color: #f7f7f7
 }
 
 ul{
@@ -17,8 +18,7 @@ ul{
 
 html{
 	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-family: 'Kaushan Script', cursive;
 }
 
@@ -26,7 +26,7 @@ nav ul {
 	list-style: none;
 }
 section{
-	padding: 70px 0;
+	padding: 40px 0;
 }
 
 .overlay{
@@ -56,28 +56,28 @@ section{
 	margin: 0 auto;
 }
 .top-nav > .container {
-	justify-content: space-between;
-	
+	justify-content: space-between;	
 }
 
 .top-nav {
 	position: fixed;
-	/*position: sticky;*/
-	/*display: flex;*/
-	/*justify-content: space-between;*/
 	align-items: center;
 	border-bottom: 1px solid #dfdfdf;
 	width: 100%; 
 	top: 0;
-	/*margin: 0 auto;*/
-	/*background-color: #fff;*/
+	background-color: rgba(189, 193, 190, .3);
 }
 .flex-container li a {
 	text-decoration: none;
 	color: white;
-	font-family: 'Montserrat';
-	padding-left:15x;
+	font-family: 'Open Sans';
+	padding-left:15px;
 	padding-right:15px;
+	color: #b6261b;
+	font-weight: 700;
+}
+.flex-container li a:hover{
+	color: red;
 }
 .logo a {
 	text-decoration: none;
@@ -85,6 +85,10 @@ section{
 	font-family: 'Kaushan Script';
 	color: #b6261b;
 }
+.logo a:hover{
+	color: red;
+}
+
 h1 {
 	font-size: 6.5625em;
 	color: #b6261b;
@@ -92,15 +96,26 @@ h1 {
 	text-transform: uppercase;
 	margin: 0;
 	text-align: center;
+	align-content: center;
 }
 .middle-content h2 {
 	font-size: 2.375em;
 	color: white;
-	font-family: 'Montserrat';
+	font-family: 'Open Sans';
 	margin: 0;
+	align-content: center;
+	font-weight: 700;
 }
-.flex-container h3 {
-	color: white;
+.flex-container p {
+	color: #b6261b;
 	/*margin: 0;*/
-	font-family: 'Montserrat';
+	font-family: 'Open Sans';
+	font-size: 1.4em;
+	font-weight: 700;
+	background-color: rgba(189, 193, 190, .5);
+	margin: 20px;
 }
+.first-page > .container {
+	align-content: center;
+	};
+
