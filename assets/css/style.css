@@ -22,7 +22,7 @@ html{
 	font-family: 'Kaushan Script', cursive;
 }
 
-nav ul {
+ul {
 	list-style: none;
 }
 section{
@@ -116,8 +116,8 @@ h1 {
 	background-color: rgba(189, 193, 190, .5);
 	max-width: 25%;
 	text-align: center;
-
 }
+
 .overlay > section.container.flex-container{
 	position: absolute;
 	top: 50%;
@@ -128,11 +128,13 @@ h1 {
 	margin: 0 auto;
 	align-items: center;
 }
+
 .inner{
 
 	margin: 0 auto;
 	max-width: 1200px
 }
+
 .overlay{
 	justify-content: flex-end;
 }
@@ -140,7 +142,85 @@ h1 {
 /*antras puslapis*/
 .second-page{
 	min-height: 100vh;
+	padding: 5px;
+}
+.page-name p{
+	padding: 5px;
 }
 .top-info{
 	display: flex;
+}
+
+.top-info p{
+	padding: 5px;
+}
+
+.second-page > .overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+p {
+	font-family: 'Open Sans';
+	line-height: 1.5;
+	text-align: justify;
+	color: #75737e;
+}
+
+.page-name p span{
+	font-family: 'Kaushan Script';
+	color: #b6261b;
+}
+
+.mision,
+.vision{
+	margin: 15px;
+}
+
+.vertybiu-list{
+	display: flex;
+	justify-content: space-around;
+}
+.vert_sarasas {
+	width: 30%;
+	margin: 5px;
+	text-align: center;
+}
+.teamwork p,
+.client p,
+.inovation p {
+	text-align: center;
+	color: black;
+	font-weight: 700;
+	/*background-color: rgba(189, 193, 190, .5);*/
+}
+
+.team {
+	background-image: url("../images/team.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+}
+.clnt {
+	background-image: url("../images/client.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+}
+.ino {
+	background-image: url("../images/inovation.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+}
+.teamwork,
+.client,
+.inovation {
+	background-color: rgba(189, 193, 190, .5);
+}
+
+.bottom-info h3{
+	color: #b6261b;
+	margin: 0;
+	background-color: rgba(189, 193, 190, .5);
 }
