@@ -63,10 +63,10 @@ section{
 .top-nav {
 	position: fixed;
 	align-items: center;
-	border-bottom: 1px solid #dfdfdf;
+	border-bottom: 1px solid #b6261b;
 	width: 100%; 
 	top: 0;
-	background-color: rgba(189, 193, 190, .3);
+	background-color: rgba(189, 193, 190, .5);
 	z-index: 1;
 }
 .flex-container li a {
@@ -108,7 +108,7 @@ h1 {
 	align-content: center;
 	font-weight: 700;
 }
-.flex-container p {
+.first-page p {
 	color: #b6261b;	
 	font-family: 'Open Sans';
 	font-size: 1.4em;
@@ -143,6 +143,7 @@ h1 {
 .second-page{
 	min-height: 100vh;
 	padding: 5px;
+	border-bottom: 1px solid #b6261b;
 }
 .page-name p{
 	padding: 5px;
@@ -196,31 +197,98 @@ p {
 }
 
 .team {
-	background-image: url("../images/team.jpg");
-	background-size: cover;
+	display: flex;
+	background: url("../images/team.jpg") ;
+	/*background-size: cover;
 	background-position: center;
-	padding: 0;
+	padding: 0;*/
 }
+
+
 .clnt {
-	background-image: url("../images/client.jpg");
-	background-size: cover;
+	display: flex;
+	background: url("../images/client.jpg");
+	/*background-size: cover;
 	background-position: center;
-	padding: 0;
+	padding: 0;*/
 }
 .ino {
-	background-image: url("../images/inovation.jpg");
+	display: flex;
+	background: url("../images/inovation.jpg");
+	/*background-size: cover;
+	background-position: center;
+	padding: 0;*/
+}
+
+.background{
+	width: 100%;
+	background-color: rgba(189, 193, 190, .5);
+
+}
+
+.team,
+.clnt,
+.ino {
 	background-size: cover;
 	background-position: center;
 	padding: 0;
 }
-.teamwork,
+
+/*.teamwork,
 .client,
 .inovation {
 	background-color: rgba(189, 193, 190, .5);
-}
-
-.bottom-info h3{
+}*/
+.vertybes,
+.vertybiu-list h3{
 	color: #b6261b;
 	margin: 0;
-	background-color: rgba(189, 193, 190, .5);
+}
+
+.mid-container h3{
+	color: #b6261b;
+}
+
+/*Statistika-column*/
+
+.statistika-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.statistika {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.statistika-column p{
+	margin: 0;
+}
+
+
+
+.statistika-column h2{
+	text-align: center;
+	color: #b6261b;
+}
+
+.statistika-column i{
+	font-size: 6.8108rem;
+	justify-content: center;
+	color: #b6261b;
+	margin: 0 auto;
+}
+
+
+/*TRECIAS PUSLAPIS*/
+
+.third-page {
+	padding-top: 33px;
+}
+
+.third-page>.overlay{
+	justify-content: space-between;
 }
