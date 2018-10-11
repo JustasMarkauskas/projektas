@@ -29,7 +29,7 @@ section{
 	padding: 40px 0;
 }
 
-.overlay{
+.overlay {
 	min-height: 100vh;
 	max-width: 1200px; /*nurodome maksimalu ploti*/
 	margin: 0 auto; /*centruojame*/
@@ -69,16 +69,16 @@ section{
 	background-color: rgba(189, 193, 190, .5);
 	z-index: 1;
 }
-.flex-container li a {
+.flex-container a {
 	text-decoration: none;
 	color: white;
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	padding-left:15px;
 	padding-right:15px;
 	color: #b6261b;
 	font-weight: 700;
 }
-.flex-container li a:hover{
+.flex-container a:hover{
 	color: red;
 }
 .logo a {
@@ -103,14 +103,14 @@ h1 {
 .middle-content h2 {
 	font-size: 2.375em;
 	color: white;
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 	align-content: center;
 	font-weight: 700;
 }
 .first-page p {
 	color: #b6261b;	
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.4em;
 	font-weight: 700;
 	background-color: rgba(189, 193, 190, .5);
@@ -160,9 +160,10 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-top: 25px;
 }
 p {
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
 	text-align: justify;
 	color: #75737e;
@@ -306,7 +307,10 @@ p {
 .service {
 	display: flex;
 }*/
-.Paslaugos>h2{
+.Paslaugos h2,
+.linkai h2, /*penkto puslapio hederis*/
+.partner-text h2,/*ketvirto puslapio hederis*/
+.page-name h2{ /*antro puslapio hederis*/
 	margin: 0;
 	color: #b6261b;
 	text-transform: uppercase;
@@ -317,6 +321,7 @@ p {
 	flex-wrap: wrap;
 
 }
+/*Info apie paslaugas uzvedus pele*/
 /*DARYTA PAGAL W3 Image Hover Overlay*/
 
 .image {
@@ -350,10 +355,93 @@ p {
   padding: 0px 0px;*/
   /*justify-content: center;*/
 /*}*/
-.text p{
+.text p,
+.partner-text p{
 	font-size: 1.5rem;
 	color: black;
 	text-align: center;
 	font-size: 1.5rem;
   	padding: 0px 0px;
+}
+
+
+/*Third page end*/
+
+/*Fourth page start*/
+
+.fourth-page {
+	background-image: url("../images/partnership.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	min-height: 100vh;
+}
+
+.partner{
+	justify-content: center;
+}
+
+.partner-text {
+	background-color: rgba(189, 193, 190, .5);
+}
+
+/*FOURTH-PAGE END*/
+
+/*FIFTH-PAGE START*/
+
+.fifth-page {
+	background-image: url("../images/archive.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	min-height: 100vh;
+	margin-top: 32px;
+}
+
+.penktas{
+	/*background-color: rgba(189, 193, 190, .5);*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.center-container{
+	background-color: rgba(189, 193, 190, .7);
+}
+
+.container-list a{
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 400;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px;
+
+}
+
+/*.container-list a:visited{
+	
+}*/
+
+.container-list a:hover{
+	font-weight: 700;
+	color: blue;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FIFTH-PAGE END!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SIXTH-PAGE START!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.sixth-page > .overlay{
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-direction: column;
+
 }
