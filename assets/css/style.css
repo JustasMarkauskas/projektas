@@ -83,8 +83,7 @@ section{
 }
 .logo a {
 	text-decoration: none;
-	color: white;
-	font-family: 'Kaushan Script';
+	font-family: 'Kaushan Script', cursive;
 	color: #b6261b;
 }
 .logo a:hover{
@@ -94,7 +93,7 @@ section{
 h1 {
 	font-size: 6.5625em;
 	color: #b6261b;
-	font-family: 'Kaushan Script';
+	font-family: 'Kaushan Script', cursive;
 	text-transform: uppercase;
 	margin: 0;
 	text-align: center;
@@ -166,11 +165,11 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
 	text-align: justify;
-	color: #75737e;
+	color: black
 }
 
 .page-name p span{
-	font-family: 'Kaushan Script';
+	font-family: 'Kaushan Script', cursive;
 	color: #b6261b;
 }
 
@@ -244,6 +243,7 @@ p {
 .vertybiu-list h3{
 	color: #b6261b;
 	margin: 0;
+	text-transform: uppercase;
 }
 
 .mid-container h3{
@@ -355,9 +355,7 @@ p {
   padding: 0px 0px;*/
   /*justify-content: center;*/
 /*}*/
-.text p,
-.partner-text p{
-	font-size: 1.5rem;
+.text p{
 	color: black;
 	text-align: center;
 	font-size: 1.5rem;
@@ -382,7 +380,23 @@ p {
 }
 
 .partner-text {
-	background-color: rgba(189, 193, 190, .5);
+	background-color: rgba(189, 193, 190, .7);
+}
+
+.partner-text p{
+	color: black;
+	text-align: justify;
+	font-size: 1.2rem;
+  	padding: 0px 0px;
+  	line-height: 1.5;
+  	padding-left: 10px;
+  	padding-right: 10px;
+}
+
+.partner-text p span{
+	font-family: 'Kaushan Script', cursive;
+	color: #b6261b;
+	font-size: 1.2rem;
 }
 
 /*FOURTH-PAGE END*/
@@ -390,7 +404,7 @@ p {
 /*FIFTH-PAGE START*/
 
 .fifth-page {
-	background-image: url("../images/archive.jpg");
+	background-image: url("../images/info.jpg");
 	background-size: cover;
 	background-position: center;
 	padding: 0;
@@ -407,7 +421,7 @@ p {
 }
 
 .center-container{
-	background-color: rgba(189, 193, 190, .7);
+	/*background-color: rgba(189, 193, 190, .7);*/
 }
 
 .container-list a{
@@ -417,6 +431,7 @@ p {
 	color: black;
 	font-family: 'Open Sans', sans-serif;
 	padding: 10px;
+	font-size: 1.2rem;
 
 }
 
@@ -438,10 +453,65 @@ p {
 /*SIXTH-PAGE START!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+.sixth-page{
+	padding: 0;
+	background-image: url("../images/career3.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	position: relative;
+	margin-top: 32px;
+}
+
 .sixth-page > .overlay{
 	display: flex;
-	justify-content: space-between;
-	align-content: space-between;
+	justify-content: center;
+	/*align-content: stretch;*/
 	flex-direction: column;
+	min-height: 100vh;
+	padding: 0;
+	
+}
 
+.karjera h2 {
+	color: #b6261b;
+	font-family: 'Kaushan Script', cursive;
+	text-transform: uppercase;
+}
+
+.karjera p{
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+
+}
+
+
+.mid-container {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	height: 40%;
+	
+}
+
+.mid-container h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: black;
+}
+
+.mid-container li{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: black;
+	line-height: 1.5rem;
+	
+}
+
+.cv-footer {
+	align-content: flex-start;
+}
+
+.nature li,
+.requirement li{
+	list-style-type: disc;
 }
