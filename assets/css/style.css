@@ -29,6 +29,12 @@ section{
 	padding: 40px 0;
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FIRST! START!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
 .overlay {
 	min-height: 100vh;
 	max-width: 1200px; /*nurodome maksimalu ploti*/
@@ -66,8 +72,9 @@ section{
 	border-bottom: 1px solid #b6261b;
 	width: 100%; 
 	top: 0;
-	background-color: rgba(189, 193, 190, .5);
+	background-color: #333;
 	z-index: 1;
+	transition: top 0.3s;
 }
 .flex-container a {
 	text-decoration: none;
@@ -79,7 +86,8 @@ section{
 	font-weight: 700;
 }
 .flex-container a:hover{
-	color: red;
+	background-color: #ddd;
+	color: #b6261b;
 }
 .logo a {
 	text-decoration: none;
@@ -87,7 +95,8 @@ section{
 	color: #b6261b;
 }
 .logo a:hover{
-	color: red;
+	background-color: #ddd;
+	color: #b6261b;
 }
 
 h1 {
@@ -138,7 +147,15 @@ h1 {
 	justify-content: flex-end;
 }
 
-/*antras puslapis*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FIRST! END!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SECOND START!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 .second-page{
 	min-height: 100vh;
 	padding: 5px;
@@ -283,9 +300,15 @@ p {
 	margin: 0 auto;
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SECOND END!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-/*TRECIAS PUSLAPIS*/
 
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*THIRD START!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .third-page {
 	padding-top: 33px;
 }
@@ -362,10 +385,14 @@ p {
   	padding: 0px 0px;
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*THIRD END!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-/*Third page end*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FOURTH START!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-/*Fourth page start*/
 
 .fourth-page {
 	background-image: url("../images/partnership.jpg");
@@ -399,9 +426,13 @@ p {
 	font-size: 1.2rem;
 }
 
-/*FOURTH-PAGE END*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FOURTH-PAGE END!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-/*FIFTH-PAGE START*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FIFTH-PAGE START!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .fifth-page {
 	background-image: url("../images/info.jpg");
@@ -477,12 +508,13 @@ p {
 	color: #b6261b;
 	font-family: 'Kaushan Script', cursive;
 	text-transform: uppercase;
+	padding-left: 10px;
 }
 
 .karjera p{
 	font-family: 'Open Sans', sans-serif;
 	color: black;
-
+	padding-left: 10px;
 }
 
 
@@ -509,9 +541,73 @@ p {
 
 .cv-footer {
 	align-content: flex-start;
+	padding-bottom: 20px;
+	padding-left: 10px;
 }
 
 .nature li,
 .requirement li{
 	list-style-type: disc;
 }
+
+.center7 {
+	background-color: rgba(189, 193, 190, .7);
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SIXTH-PAGE END!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SEVENTH-PAGE START!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.seventh-page {
+	padding: 0;
+}
+.seventh-overlay {
+	min-height: 100vh;
+	max-width: 1200px; /*nurodome maksimalu ploti*/
+	margin: 0 auto; /*centruojame*/
+	display: flex;
+	flex-direction: row;
+	/*justify-content: space-between;*/
+	/*align-content: center;*/
+	position: relative;
+}
+
+.contact-container {
+	width: 30%;
+}
+
+.contact p{
+	font-size: 1rem;
+}
+
+.mail h4{
+	margin: 0;
+	text-transform: uppercase;
+	color: #b6261b;
+	font-family: 'Kaushan Script', cursive;
+}
+.map {
+	width: 70%;
+	align-items: center;
+	align-content: center;
+}
+
+.mapouter{
+	text-align:right;height:500px;width:600px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.gmap_canvas {
+	overflow:hidden;background:none!important;height:500px;width:600px;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SEVENTH-PAGE END!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
