@@ -1,10 +1,10 @@
-*,
+/**,
 *::before,
 *::after{
 	box-sizing: border-box;
 	border: 1px solid red;
 }
-
+*/
 body{
 	margin: 0;
 	background-color: #f7f7f7
@@ -37,13 +37,13 @@ section{
 
 .overlay {
 	min-height: 100vh;
-	max-width: 1200px; /*nurodome maksimalu ploti*/
-	margin: 0 auto; /*centruojame*/
+	max-width: 1200px;
+	margin: 0 auto; 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-content: center;
-	position: relative; /*pasidarem sita*/
+	position: relative; 
 }
 .first-page {
 	background-image: url("../images/first-background.jpg");
@@ -57,7 +57,7 @@ section{
 	display: flex;
 	justify-content: space-around;
 }
-/*Kodel navigacijos meniu susitraukia i kaire puse kai padarai fixed ? */
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -210,31 +210,22 @@ p {
 	text-align: center;
 	color: black;
 	font-weight: 700;
-	/*background-color: rgba(189, 193, 190, .5);*/
 }
 
 .team {
 	display: flex;
 	background: url("../images/team.jpg") ;
-	/*background-size: cover;
-	background-position: center;
-	padding: 0;*/
 }
 
 
 .clnt {
 	display: flex;
 	background: url("../images/client.jpg");
-	/*background-size: cover;
-	background-position: center;
-	padding: 0;*/
 }
+
 .ino {
 	display: flex;
 	background: url("../images/inovation.jpg");
-	/*background-size: cover;
-	background-position: center;
-	padding: 0;*/
 }
 
 .background{
@@ -251,11 +242,6 @@ p {
 	padding: 0;
 }
 
-/*.teamwork,
-.client,
-.inovation {
-	background-color: rgba(189, 193, 190, .5);
-}*/
 .vertybes,
 .vertybiu-list h3{
 	color: #b6261b;
@@ -266,8 +252,6 @@ p {
 .mid-container h3{
 	color: #b6261b;
 }
-
-/*Statistika-column*/
 
 .statistika-column {
 	display: flex;
@@ -321,15 +305,10 @@ p {
 	max-width: 50%;
 }
 .photo img{
-	/*background-size: cover;*/
 	max-width: 100%;
 	min-height: 100%;
-	/*height: auto;*/
 }
-/*
-.service {
-	display: flex;
-}*/
+
 .Paslaugos h2,
 .linkai h2, /*penkto puslapio hederis*/
 .partner-text h2,/*ketvirto puslapio hederis*/
@@ -373,11 +352,6 @@ p {
   opacity: 1;
 }
 
-/*.text {
-  font-size: 1.5rem;
-  padding: 0px 0px;*/
-  /*justify-content: center;*/
-/*}*/
 .text p{
 	color: black;
 	text-align: center;
@@ -444,7 +418,6 @@ p {
 }
 
 .penktas{
-	/*background-color: rgba(189, 193, 190, .5);*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -452,7 +425,7 @@ p {
 }
 
 .center-container{
-	/*background-color: rgba(189, 193, 190, .7);*/
+	
 }
 
 .container-list a{
@@ -465,10 +438,6 @@ p {
 	font-size: 1.2rem;
 
 }
-
-/*.container-list a:visited{
-	
-}*/
 
 .container-list a:hover{
 	font-weight: 700;
@@ -497,7 +466,6 @@ p {
 .sixth-page > .overlay{
 	display: flex;
 	justify-content: center;
-	/*align-content: stretch;*/
 	flex-direction: column;
 	min-height: 100vh;
 	padding: 0;
@@ -572,8 +540,7 @@ p {
 	margin: 0 auto; /*centruojame*/
 	display: flex;
 	flex-direction: row;
-	/*justify-content: space-between;*/
-	/*align-content: center;*/
+	
 	position: relative;
 }
 
@@ -607,7 +574,15 @@ p {
 	overflow:hidden;background:none!important;height:500px;width:600px;
 }
 
-
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*SEVENTH-PAGE END!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+@media screen and (max-width:600px){
+	img{
+		width: 100%;
+	}
+	.photo {
+	max-width: 100%;
+	}
+}
