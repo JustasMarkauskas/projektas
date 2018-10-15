@@ -11,3 +11,13 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
+
+
+// Burgerio meniu
+
+
+$(document).ready(function(){
+				$('.burger').click(function(){
+					$('.topnavmenu').toggleClass('show');
+				});
+			});
