@@ -1,10 +1,10 @@
-*,
+/**,
 *::before,
 *::after{
 	box-sizing: border-box;
 	border: 1px solid red;
 }
-
+*/
 body{
 	margin: 0;
 	background-color: #f7f7f7
@@ -15,7 +15,6 @@ ul{
 	margin: 0;
 }
 
-
 html{
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -25,6 +24,7 @@ html{
 ul {
 	list-style: none;
 }
+
 section{
 	padding: 40px 0;
 }
@@ -45,6 +45,7 @@ section{
 	align-content: center;
 	position: relative; 
 }
+
 .first-page {
 	background-image: url("../images/first-background.jpg");
 	background-size: cover;
@@ -64,6 +65,7 @@ section{
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
 .top-nav > .container {
 	justify-content: space-between;	
 }
@@ -86,23 +88,24 @@ section{
 
 
 @media all and (max-width: 900px){
-.topnavmenu{
-	display: none;
-	flex-wrap: wrap;
+	.topnavmenu{
+		display: none;
+		flex-wrap: wrap;
+	}
+
+	.topnavmenu.show{
+		display: block;
+	}
+
+	.menu-item{
+		width: 100%;
+	}
+
+	.burger{
+		display: block;
+	}
 }
 
-.topnavmenu.show{
-	display: block;
-}
-
-.menu-item{
-	width: 100%;
-}
-
-.burger{
-	display: block;
-}
-}
 .top-nav>.container{
 	justify-content: space-between;
 	align-content: space-between;
@@ -118,22 +121,25 @@ section{
 	color: #b6261b;
 	font-weight: 700;
 }
+
 .flex-container a:hover{
 	background-color: #ddd;
 	color: #b6261b;
 }
+
 .logo a {
 	text-decoration: none;
 	font-family: 'Kaushan Script', cursive;
 	color: #b6261b;
 }
+
 .logo a:hover{
 	background-color: #ddd;
 	color: #b6261b;
 }
 
 h1 {
-	font-size: 6.5625em;
+	font-size: 6.5625rem;
 	color: #b6261b;
 	font-family: 'Kaushan Script', cursive;
 	text-transform: uppercase;
@@ -141,8 +147,9 @@ h1 {
 	text-align: center;
 	align-content: center;
 }
+
 .middle-content h2 {
-	font-size: 2.375em;
+	font-size: 2.375rem;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
@@ -151,6 +158,7 @@ h1 {
 	text-align: center;
 	justify-content: center;
 }
+
 .first-page p {
 	color: #b6261b;	
 	font-family: 'Open Sans', sans-serif;
@@ -160,17 +168,6 @@ h1 {
 	max-width: 25%;
 	text-align: center;
 }
-
-/*.overlay > section.container.flex-container{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
-	resize: vertical;
-	overflow: auto;
-	margin: 0 auto;
-	align-items: center;
-}*/
 
 .inner{
 	margin: 0 auto;
@@ -195,9 +192,11 @@ h1 {
 	padding: 5px;
 	border-bottom: 1px solid #b6261b;
 }
+
 .page-name p{
 	padding: 5px;
 }
+
 .top-info{
 	display: flex;
 }
@@ -233,11 +232,13 @@ p {
 	display: flex;
 	justify-content: space-around;
 }
+
 .vert_sarasas {
 	width: 30%;
 	margin: 5px;
 	text-align: center;
 }
+
 .teamwork p,
 .client p,
 .inovation p {
@@ -334,11 +335,13 @@ p {
 .third-page>.overlay{
 	justify-content: center;
 }
+
 .photo {
 	position: relative;
 	max-width: 30%;
 	margin: 0;
 }
+
 .photo img{
 	max-width: 100%;
 	min-height: 100%;
@@ -358,6 +361,7 @@ p {
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
 /*Info apie paslaugas uzvedus pele*/
 /*DARYTA PAGAL W3 Image Hover Overlay*/
 
@@ -383,6 +387,7 @@ p {
 .photo:hover .image {
   opacity: 0.3;
 }
+
 .photo:hover .middle {
   opacity: 1;
 }
@@ -557,6 +562,11 @@ p {
 	background-color: rgba(189, 193, 190, .7);
 }
 
+.cv-footer label{
+	font-family: 'Kaushan Script', cursive;
+	font-weight: 400;
+	color: #b6261b;
+}
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*SIXTH-PAGE END!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -592,6 +602,7 @@ p {
 	color: #b6261b;
 	font-family: 'Kaushan Script', cursive;
 }
+
 .map {
 	width: 70%;
 	align-items: center;
@@ -654,14 +665,12 @@ p {
 		text-align: center;
 	}
 
-	.bottom-info{
-
-	}
-
+	
 	.seventh-overlay{
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.contact-container,
 	.map {
 		width: 85%;
@@ -670,6 +679,10 @@ p {
 
 	.mapouter{
 		margin: 0 auto;
+	}
+
+	.overlay > section.container.flex-container{
+			width: 100%;	
 	}
 
 }
@@ -692,15 +705,7 @@ p {
 	.middle{
 		width: 100%
 	}
-		/*#oversized1{
-			width: 100%;
-		}
-	*/
-	/*	#oversized p{
-			text-align: justify;
-			width: 100%;
-		}
-	*/
+	
 	.top-nav{
 		width: 100%
 	}
@@ -749,5 +754,13 @@ p {
 
 	.inner{
 		width: 100%;
+	}
+
+	h1 {
+	font-size: 4rem;
+	}
+
+	.middle-content h2 {
+		font-size: 2.0rem;
 	}
 }
