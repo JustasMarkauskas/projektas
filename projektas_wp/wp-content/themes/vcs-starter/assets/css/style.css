@@ -1,0 +1,766 @@
+/**,
+*::before,
+*::after{
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+*/
+body{
+	margin: 0;
+	background-color: #f7f7f7
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Kaushan Script', cursive;
+}
+
+ul {
+	list-style: none;
+}
+
+section{
+	padding: 40px 0;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FIRST! START!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+.overlay {
+	min-height: 100vh;
+	max-width: 1200px;
+	margin: 0 auto; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	position: relative; 
+}
+
+.first-page {
+	background-image: url("../images/first-background.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.top-nav > .container {
+	justify-content: space-between;	
+}
+
+.top-nav {
+	position: fixed;
+	align-items: center;
+	border-bottom: 1px solid #b6261b;
+	width: 100%; 
+	top: 0;
+	background-color: #333;
+	z-index: 1;
+	transition: top 0.3s;
+}
+/*BURGERIO MENU START*/
+.burger{
+		display: none;
+		color: #b6261b;
+}
+
+
+@media all and (max-width: 900px){
+	.topnavmenu{
+		display: none;
+		flex-wrap: wrap;
+	}
+
+	.topnavmenu.show{
+		display: block;
+	}
+
+	.menu-item{
+		width: 100%;
+	}
+
+	.burger{
+		display: block;
+	}
+}
+
+.top-nav>.container{
+	justify-content: space-between;
+	align-content: space-between;
+}
+/*BURGERIO MENU END*/
+
+.flex-container a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	padding-left:15px;
+	padding-right:15px;
+	color: #b6261b;
+	font-weight: 700;
+}
+
+.flex-container a:hover{
+	background-color: #ddd;
+	color: #b6261b;
+}
+
+.logo a {
+	text-decoration: none;
+	font-family: 'Kaushan Script', cursive;
+	color: #b6261b;
+}
+
+.logo a:hover{
+	background-color: #ddd;
+	color: #b6261b;
+}
+
+h1 {
+	font-size: 6.5625rem;
+	color: #b6261b;
+	font-family: 'Kaushan Script', cursive;
+	text-transform: uppercase;
+	margin: 0;
+	text-align: center;
+	align-content: center;
+}
+
+.middle-content h2 {
+	font-size: 2.375rem;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	align-content: center;
+	font-weight: 700;
+	text-align: center;
+	justify-content: center;
+}
+
+.first-page p {
+	color: #b6261b;	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.4em;
+	font-weight: 700;
+	background-color: rgba(189, 193, 190, .5);
+	max-width: 25%;
+	text-align: center;
+}
+
+.inner{
+	margin: 0 auto;
+	max-width: 1200px
+}
+
+.overlay{
+	justify-content: flex-end;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FIRST! END!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SECOND START!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.second-page{
+	min-height: 100vh;
+	padding: 5px;
+	border-bottom: 1px solid #b6261b;
+}
+
+.page-name p{
+	padding: 5px;
+}
+
+.top-info{
+	display: flex;
+}
+
+.top-info p{
+	padding: 5px;
+}
+
+.second-page > .overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+	text-align: justify;
+	color: black
+}
+
+.page-name p span{
+	font-family: 'Kaushan Script', cursive;
+	color: #b6261b;
+}
+
+.mision,
+.vision{
+	margin: 15px;
+}
+
+.vertybiu-list{
+	display: flex;
+	justify-content: space-around;
+}
+
+.vert_sarasas {
+	width: 30%;
+	margin: 5px;
+	text-align: center;
+}
+
+.teamwork p,
+.client p,
+.inovation p {
+	text-align: center;
+	color: black;
+	font-weight: 700;
+}
+
+.team {
+	display: flex;
+	background: url("../images/team.jpg") ;
+}
+
+
+.clnt {
+	display: flex;
+	background: url("../images/client.jpg");
+}
+
+.ino {
+	display: flex;
+	background: url("../images/inovation.jpg");
+}
+
+.background{
+	width: 100%;
+	background-color: rgba(189, 193, 190, .5);
+
+}
+
+.team,
+.clnt,
+.ino {
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+}
+
+.vertybes,
+.vertybiu-list h3{
+	color: #b6261b;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.mid-container h3{
+	color: #b6261b;
+}
+
+.statistika-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.statistika {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.statistika-column p{
+	margin: 0;
+}
+
+
+
+.statistika-column h2{
+	text-align: center;
+	color: #b6261b;
+}
+
+.statistika-column i{
+	font-size: 6.8108rem;
+	justify-content: center;
+	color: #b6261b;
+	margin: 0 auto;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SECOND END!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*THIRD START!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.third-page {
+	padding-top: 33px;
+}
+
+.third-page>.overlay{
+	justify-content: center;
+}
+
+.photo {
+	position: relative;
+	max-width: 30%;
+	margin: 0;
+}
+
+.photo img{
+	max-width: 100%;
+	min-height: 100%;
+}
+
+.Paslaugos h2,
+.linkai h2, /*penkto puslapio hederis*/
+.partner-text h2,/*ketvirto puslapio hederis*/
+.page-name h2{ /*antro puslapio hederis*/
+	margin: 0;
+	color: #b6261b;
+	text-transform: uppercase;
+}
+.service-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*Info apie paslaugas uzvedus pele*/
+/*DARYTA PAGAL W3 Image Hover Overlay*/
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.photo:hover .image {
+  opacity: 0.3;
+}
+
+.photo:hover .middle {
+  opacity: 1;
+}
+
+.text p{
+	color: black;
+	text-align: center;
+	font-size: 1.2rem;
+  	padding: 0px 0px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*THIRD END!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FOURTH START!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+.fourth-page {
+	background-image: url("../images/partnership.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	min-height: 100vh;
+}
+
+.partner{
+	justify-content: center;
+}
+
+.partner-text {
+	background-color: rgba(189, 193, 190, .7);
+}
+
+.partner-text p{
+	color: black;
+	text-align: justify;
+	font-size: 1.2rem;
+  	padding: 0px 0px;
+  	line-height: 1.5;
+  	padding-left: 10px;
+  	padding-right: 10px;
+}
+
+.partner-text p span{
+	font-family: 'Kaushan Script', cursive;
+	color: #b6261b;
+	font-size: 1.2rem;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FOURTH-PAGE END!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FIFTH-PAGE START!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.fifth-page {
+	background-image: url("../images/info.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	min-height: 100vh;
+	margin-top: 32px;
+}
+
+.penktas{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.center-container{
+	
+}
+
+.container-list a{
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 400;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px;
+	font-size: 1.2rem;
+
+}
+
+.container-list a:hover{
+	font-weight: 700;
+	color: blue;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*FIFTH-PAGE END!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SIXTH-PAGE START!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.sixth-page{
+	padding: 0;
+	background-image: url("../images/career3.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	position: relative;
+	margin-top: 32px;
+}
+
+.sixth-page > .overlay{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 0;
+	
+}
+
+.karjera h2 {
+	color: #b6261b;
+	font-family: 'Kaushan Script', cursive;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+
+.karjera p{
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	padding-left: 10px;
+}
+
+
+.mid-container {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	height: 40%;
+	
+}
+
+.mid-container h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: black;
+}
+
+.mid-container li{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: black;
+	line-height: 1.5rem;
+	
+}
+
+.cv-footer {
+	align-content: flex-start;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+.nature li,
+.requirement li{
+	list-style-type: disc;
+}
+
+.center7 {
+	background-color: rgba(189, 193, 190, .7);
+}
+
+.cv-footer label{
+	font-family: 'Kaushan Script', cursive;
+	font-weight: 400;
+	color: #b6261b;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SIXTH-PAGE END!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SEVENTH-PAGE START!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.seventh-page {
+	padding: 0;
+}
+.seventh-overlay {
+	min-height: 100vh;
+	max-width: 1200px; /*nurodome maksimalu ploti*/
+	margin: 0 auto; /*centruojame*/
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.contact-container {
+	width: 30%;
+}
+
+.contact p{
+	font-size: 1rem;
+}
+
+.mail h4{
+	margin: 0;
+	text-transform: uppercase;
+	color: #b6261b;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.map {
+	width: 70%;
+	align-items: center;
+	align-content: center;
+}
+
+.mapouter{
+	text-align:right;height:500px;max-width:600px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.gmap_canvas {
+	overflow:hidden;background:none!important;height:500px;max-width:600px;
+}
+
+#gmap_canvas{
+	width: 100%;
+	height: 100%;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*SEVENTH-PAGE END!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+@media screen and (max-width:900px){
+	img{
+		width: 100%;
+	}
+	.photo {
+	max-width: 50%;
+	}
+	.top-nav{
+		width: 100%
+	}
+
+	.first-page p {
+	max-width: 33%;
+	margin:5;
+	}
+
+	.top-info{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.mision,
+	.vision{
+		margin: 5px;
+	}
+
+	.vertybiu-list {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.vert_sarasas {
+		width: 70%;
+		margin: 5px;
+		text-align: center;
+	}
+
+	
+	.seventh-overlay{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-container,
+	.map {
+		width: 85%;
+		margin: 0;
+	}
+
+	.mapouter{
+		margin: 0 auto;
+	}
+
+	.overlay > section.container.flex-container{
+			width: 100%;	
+	}
+
+}
+
+
+@media screen and (max-width:600px){
+	
+	#first-overlay{
+		justify-content: flex-start;
+	}
+
+
+	img{
+		width: 100%;
+	}
+	.photo {
+	max-width: 100%;
+	}
+
+	.middle{
+		width: 100%
+	}
+	
+	.top-nav{
+		width: 100%
+	}
+
+	.first-page p {
+		max-width: 90%;
+		margin-top: 0;
+		margin-bottom: 5;
+	}
+
+	.overlay {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.mision,
+	.vision{
+		margin: 0;
+	}
+
+	.vert_sarasas {
+		width: 100%;
+		margin: 2px;
+		text-align: center;
+	}
+
+	.statistika{
+		flex-direction: column;
+	}
+
+	.statistika-column p{
+		text-align: center;
+	}
+
+	.statistika-column h2{
+		margin-top: 5px;
+		margin-bottom: 2px;
+	}
+
+	.contact-container,
+	.map {
+		width: 95%;
+		margin: 0;
+	}
+
+	.inner{
+		width: 100%;
+	}
+
+	h1 {
+	font-size: 4rem;
+	}
+
+	.middle-content h2 {
+		font-size: 2.0rem;
+	}
+}

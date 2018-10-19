@@ -16,8 +16,8 @@ var currentScrollPos = window.pageYOffset;
 // Burgerio meniu
 
 
-$(document).ready(function(){
-				$('.burger').click(function(){
-					$('.topnavmenu').toggleClass('show');
+jQuery(document).ready(function(){
+				jQuery('.burger').click(function(){
+					// jQuery('.topnavmenu').toggleClass('show');
 				});
 			});
