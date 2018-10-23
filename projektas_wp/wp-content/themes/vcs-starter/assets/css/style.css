@@ -223,8 +223,7 @@ p {
 	color: #b6261b;
 }
 
-.mision,
-.vision{
+.mision-vision{
 	margin: 15px;
 }
 
@@ -239,9 +238,7 @@ p {
 	text-align: center;
 }
 
-.teamwork p,
-.client p,
-.inovation p {
+.tci p {
 	text-align: center;
 	color: black;
 	font-weight: 700;
@@ -249,18 +246,15 @@ p {
 
 .team {
 	display: flex;
-	background: url("../images/team.jpg") ;
 }
 
 
 .clnt {
 	display: flex;
-	background: url("../images/client.jpg");
 }
 
 .ino {
 	display: flex;
-	background: url("../images/inovation.jpg");
 }
 
 .background{
@@ -286,6 +280,7 @@ p {
 
 .mid-container h3{
 	color: #b6261b;
+	text-transform: uppercase;
 }
 
 .statistika-column {
@@ -409,7 +404,6 @@ p {
 
 
 .fourth-page {
-	background-image: url("../images/partnership.jpg");
 	background-size: cover;
 	background-position: center;
 	padding: 0;
@@ -647,8 +641,7 @@ p {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	.mision,
-	.vision{
+	.mision-vision{
 		margin: 5px;
 	}
 
@@ -722,8 +715,7 @@ p {
 		justify-content: flex-end;
 	}
 
-	.mision,
-	.vision{
+	.mision-vision{
 		margin: 0;
 	}
 

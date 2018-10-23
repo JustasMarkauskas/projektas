@@ -223,8 +223,7 @@ p {
 	color: #b6261b;
 }
 
-.mision,
-.vision{
+.mision-vision{
 	margin: 15px;
 }
 
@@ -239,9 +238,7 @@ p {
 	text-align: center;
 }
 
-.teamwork p,
-.client p,
-.inovation p {
+.tci p {
 	text-align: center;
 	color: black;
 	font-weight: 700;
@@ -286,6 +283,7 @@ p {
 
 .mid-container h3{
 	color: #b6261b;
+	text-transform: uppercase;
 }
 
 .statistika-column {
@@ -647,8 +645,7 @@ p {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	.mision,
-	.vision{
+	.mision-vision{
 		margin: 5px;
 	}
 
@@ -722,8 +719,7 @@ p {
 		justify-content: flex-end;
 	}
 
-	.mision,
-	.vision{
+	.mision-vision{
 		margin: 0;
 	}
 
