@@ -27,7 +27,7 @@
 				</a>	
 			</div>
 			<div class="burger">
-			<i class="fas fa-bars"></i>
+			<?php the_field('burger_icon');?>
 			</div>
 			<nav class="nav-bar">
 				<?php 

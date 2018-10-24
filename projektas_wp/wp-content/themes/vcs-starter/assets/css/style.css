@@ -489,7 +489,7 @@ p {
 
 .sixth-page{
 	padding: 0;
-	background-image: url("../images/career3.jpg");
+	/*background-image: url("../images/career3.jpg");*/
 	background-size: cover;
 	background-position: center;
 	padding: 0;
@@ -588,9 +588,15 @@ p {
 
 .contact p{
 	font-size: 1rem;
+	margin: 2px;
 }
 
-.mail h4{
+.contact h2{
+	color: #b6261b;
+	text-transform: uppercase;
+}
+
+.contact-us h4{
 	margin: 0;
 	text-transform: uppercase;
 	color: #b6261b;

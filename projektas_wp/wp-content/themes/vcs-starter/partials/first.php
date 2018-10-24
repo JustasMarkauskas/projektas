@@ -1,4 +1,7 @@
-<section id="first" class="first-page">
+<?php 
+$image1 = get_field('ho_background_image');
+?>
+<section id="first" class="first-page"style="background-image: url(<?php echo $image1['sizes']['large']?>);">
 	<div id="first-overlay" class="overlay">
 		<section class="container flex-container">
 			<div class="middle-content">
@@ -14,9 +17,7 @@
 			<div class="flex-container">
 				<?php
 					if(have_rows('ho_main_goals')):		 	
-					    while(have_rows('ho_main_goals')) : the_row();	        
-					        // the_sub_field('sub_field_name');
-					        // get_sub_field('sub_field_name');
+					    while(have_rows('ho_main_goals')) : the_row();
 					        ?>
 					        	<p><?php the_sub_field('short_goal') ?></p>
 					        <?php

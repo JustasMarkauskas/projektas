@@ -1,44 +1,73 @@
-<section id="sixth" class="sixth-page">
+<?php 
+$image6 = get_field('hsix_bacground_image');
+?>
+
+
+<section id="sixth" class="sixth-page" style="background-image: url(<?php echo $image6['sizes']['large']?>);">
 	<div class="overlay">
 		<div class="center7">
 			<header class=karjera>
-				<h2>Karjera</h2>
-				<p>Jei esi jaunas, atkaklus ir ambicingas, orientuotas į tikslo ir rezultatrų siekimą, visada esi laukiamas mūsų komandoje. Šiuo metu ieškome:</p>				
+				<h2><?php the_field('hsix_page_name'); ?></h2>
+				<p><?php the_field('hsix_page_intro'); ?></p>				
 			</header>
-			<div class="mid-container">
-				<div class=flex-container>
-					<div class="pozition">
-						<h3>TRANSPORTO VADYBININKO (-ĖS) IR PASLAUGŲ PARDAVIMO VADYBININKO (-ĖS)</h3>
-					</div>
-				</div>
-				<div class="flex-container">
-					<div class="nature">
-						<h4>Darbo pobūdis:</h4>
-						<ul>
-							<li>Darbas su vežėjais;</li>
-							<li>Logistikos paslaugų pardavimas;</li>
-							<li>Naujų vežėjų paieška;</li>
-							<li>Reisų kontrolė.</li>
-						</ul>
-					</div>
-					<div class="requirement">
-						<h4>Reikalavimai:</h4>
-						<ul>
-							<li>Aukštasis arba aukštesnysis išsilavinimas (paskutinių kursų studentai);</li>
-							<li>Užsienio kalbų mokėjimas (vokiečių, lenkų k. būtų privalumas);</li>
-							<li>Darbo patirtis (būtų privalumas);</li>
-							<li>Puikūs bendravimo ir derybų vedimo įgūdžiai;</li>
-							<li>Iniciatyvumas, atsakingumas, komunikabilumas ir gebėjimas dirbti komandoje.</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			<?php
+				if(have_rows('hsix_position_repeater') ): 	
+				    while (have_rows('hsix_position_repeater')) : the_row();
+				    	?>
+				    		<div class="mid-container">
+								<div class=flex-container>
+									<div class="pozition">
+										<h3><?php the_sub_field('position_name'); ?></h3>
+									</div>
+								</div>
+								<div class="flex-container">
+									<div class="nature">
+										<h4><?php the_sub_field('position_description'); ?></h4>
+										<ul>
+											<?php 
+												if(have_rows('description_repeater') ): 	
+												    while (have_rows('description_repeater')) : the_row();
+												    	?>
+												    		<li><?php the_sub_field('list'); ?></li>
+												    	<?php
+											    	endwhile;
+												endif; 
+											?>
+										</ul>
+									</div>
+									<div class="requirement">
+										<h4><?php the_sub_field('position_requirement'); ?></h4>
+										<ul>
+											<?php 
+												if(have_rows('requirement_repeater') ): 	
+												    while (have_rows('requirement_repeater')) : the_row();
+												    	?>
+												    		<li><?php the_sub_field('requirement_list'); ?></li>
+												    	<?php
+											    	endwhile;
+												endif; 
+											?>
+										</ul>
+									</div>
+								</div>
+							</div>
+				        <?php
+				    endwhile;
+				endif;
+			?>			
 			<footer>
-				<div class="cv-footer">
-					<label>Prisegti CV</label><br>
-					<input type="file" name="attachment" accept=".doc,.docx,.pdf">
-					<input type="submit" name="submit" value="Siųsti">
-				</div>	
+				<?php
+				if (have_posts()):
+					while (have_posts()):
+						the_post(); 
+						?>
+							<div class="cv-footer">
+								<?php echo do_shortcode(get_field('hsixcv_form_shortcode')); ?>
+							</div>
+						<?php 
+					endwhile;
+				endif;
+				?>				
 			</footer>
 		</div>
 	</div>
